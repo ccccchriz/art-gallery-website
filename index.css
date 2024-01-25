@@ -1,0 +1,61 @@
+:root {
+  --clr-primary-gold: hsla(24, 56%, 63%, 1);
+
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  --clr-neutral-200: hsla(0, 0%, 27%, 1);
+  --clr-neutral-300: hsla(0, 0%, 8%, 1);
+
+  --ff-primary: "Big Shoulders Display", sans-serif;
+  --ff-secondary: "Outfit", sans-serif;
+
+  --fw-light: 300;
+  --fw-black: 900;
+}
+
+body {
+  background-color: var(--clr-neutral-100);
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card__heading {
+  font-size: 3.75rem;
+  line-height: 0.91667;
+  color: var(--clr-neutral-300);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.card__paragraph {
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-200);
+}
+
+.main__link {
+  margin-top: 1rem;
+  margin-bottom: 6.5rem;
+  width: max-content;
+  display: block;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-300);
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.22725rem;
+}
+
+.card__title {
+  font-family: var(--ff-primary);
+  font-size: 3.125rem;
+  line-height: 0.9;
+  counter-reset: var(--clr-neutral-300);
+  text-transform: uppercase;
+}
