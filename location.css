@@ -25,6 +25,10 @@
   letter-spacing: 0.22725rem;
 }
 
+.main__map {
+  width: 100%;
+}
+
 .card {
   background-color: var(--clr-neutral-300);
   padding: 3rem 1rem 3.5rem 1rem;
