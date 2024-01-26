@@ -23,6 +23,10 @@ body {
   margin-top: 1rem;
 }
 
+.card__logo {
+  width: 18rem;
+}
+
 .card__heading {
   font-size: 3.75rem;
   line-height: 0.91667;
@@ -73,8 +77,29 @@ body {
 }
 
 footer {
+  display: grid;
+  gap: 2.375rem;
   margin-top: 7.5rem;
   background-color: var(--clr-neutral-300);
   color: var(--clr-neutral-100);
   padding: 3rem 2rem;
+}
+
+.footer__logo {
+  max-width: 6.87813rem;
+}
+
+.footer__paragraph {
+  font-family: var(--ff-secondary);
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.footer__links ::marker {
+  font-size: 0;
 }
