@@ -13,32 +13,64 @@
 
     <title>Location | Art gallery website</title>
     <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="location.css" />
   </head>
   <body>
-    <h1>Modern Art Gallery</h1>
-    <a href="index.html">Back to Home</a>
-
-    <h2>Our location</h2>
-
-    <p>
-      <span>99 King Street</span>
-      <span>Newport</span>
-      <span>RI 02840</span>
-      <span>United States of America</span>
-    </p>
-
-    <p>
-      Our newly opened gallery is located near the Edward King House on 99 King
-      Street, the Modern Art Gallery is free to all visitors and open seven days
-      a week from 8am to 9pm.
-    </p>
+    <main>
+      <h1 class="visually-hidden">Modern Art Gallery</h1>
+      <a href="index.html" class="main__link">Back to Home</a>
+      <img src="assets/mobile/image-map.png" alt="" />
+      <div class="card">
+        <h2 class="card__title">Our location</h2>
+        <p class="card__address">
+          <span class="card__street">99 King Street</span>
+          <span>Newport</span>
+          <span>RI 02840</span>
+          <span>United States of America</span>
+        </p>
+        <p class="card__paragraph">
+          Our newly opened gallery is located near the Edward King House on 99
+          King Street, the Modern Art Gallery is free to all visitors and open
+          seven days a week from 8am to 9pm.
+        </p>
+      </div>
+    </main>
 
     <footer>
-      <p>Modern Art Gallery</p>
-      <p>
+      <img src="assets/logo-dark.svg" alt="" class="footer__logo" />
+      <p class="footer__paragraph">
         The Modern Art Gallery is free to all visitors and open seven days a
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
+      <ul class="footer__links">
+        <li>
+          <a href="">
+            <img
+              src="assets/icon-facebook.svg"
+              alt="facebook"
+              class="footer__social"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/icon-instagram.svg"
+              alt="instagram"
+              class="footer__social"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/icon-twitter.svg"
+              alt="twitter"
+              class="footer__social"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
