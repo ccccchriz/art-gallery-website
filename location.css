@@ -97,3 +97,32 @@ footer {
 .footer__social {
   filter: brightness(1) invert(1);
 }
+
+@media screen and (min-width: 40rem) {
+  .card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 5.5rem 2.5rem 5rem 2.5rem;
+    column-gap: 4.25rem;
+  }
+
+  .card__title {
+    width: min-content;
+    grid-row: 1 / 3;
+  }
+
+  .card__street {
+    margin-top: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .footer__paragraph {
+    max-width: 17.5625rem;
+  }
+}
