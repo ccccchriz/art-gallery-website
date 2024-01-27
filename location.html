@@ -21,6 +21,14 @@
       <a href="index.html" class="main__link">Back to Home</a>
       <picture>
         <source
+          media="(min-width: 80rem)"
+          srcset="assets/desktop/image-map@2x.png"
+        />
+        <source
+          media="(min-width: 60rem)"
+          srcset="assets/desktop/image-map.png"
+        />
+        <source
           media="(min-width: 40rem)"
           srcset="assets/tablet/image-map.png"
         />
@@ -47,40 +55,42 @@
     </main>
 
     <footer>
-      <img src="assets/logo-dark.svg" alt="" class="footer__logo" />
-      <p class="footer__paragraph">
-        The Modern Art Gallery is free to all visitors and open seven days a
-        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-      </p>
-      <ul class="footer__links">
-        <li>
-          <a href="">
-            <img
-              src="assets/icon-facebook.svg"
-              alt="facebook"
-              class="footer__social"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img
-              src="assets/icon-instagram.svg"
-              alt="instagram"
-              class="footer__social"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img
-              src="assets/icon-twitter.svg"
-              alt="twitter"
-              class="footer__social"
-            />
-          </a>
-        </li>
-      </ul>
+      <div class="footer">
+        <img src="assets/logo-dark.svg" alt="" class="footer__logo" />
+        <p class="footer__paragraph">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <ul class="footer__links">
+          <li>
+            <a href="">
+              <img
+                src="assets/icon-facebook.svg"
+                alt="facebook"
+                class="footer__social"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="assets/icon-instagram.svg"
+                alt="instagram"
+                class="footer__social"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="assets/icon-twitter.svg"
+                alt="twitter"
+                class="footer__social"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

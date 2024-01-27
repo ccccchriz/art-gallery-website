@@ -67,9 +67,12 @@
 }
 
 footer {
+  background-color: var(--clr-primary-gold);
+}
+
+.footer {
   display: grid;
   gap: 2.375rem;
-  background-color: var(--clr-primary-gold);
   color: var(--clr-neutral-100);
   padding: 3rem 2rem;
 }
@@ -115,7 +118,11 @@ footer {
     margin-top: 0;
   }
 
-  footer {
+  .card__paragraph {
+    max-width: 33.75rem;
+  }
+
+  .footer {
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -124,5 +131,30 @@ footer {
 
   .footer__paragraph {
     max-width: 17.5625rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-neutral-300);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 70rem;
+    align-self: center;
+    column-gap: 13rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    width: 100%;
+    max-width: 70rem;
   }
 }
