@@ -23,6 +23,12 @@ body {
   margin-top: 1rem;
 }
 
+.card__top,
+.card__bottom {
+  display: grid;
+  gap: 1rem;
+}
+
 .card__logo {
   width: 18rem;
 }
@@ -116,6 +122,31 @@ footer {
 }
 
 @media screen and (min-width: 40rem) {
+  .card {
+    padding: 2.5rem;
+  }
+
+  .card__top {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    column-gap: 3.25rem;
+  }
+
+  .top__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .card__bottom {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .bottom__image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
   .footer {
     display: flex;
     justify-content: space-between;
