@@ -160,6 +160,15 @@ footer {
 }
 
 @media (min-width: 60rem) {
+  main {
+    display: grid;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 70rem;
+  }
+
   footer {
     display: flex;
     justify-content: center;
