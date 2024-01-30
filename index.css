@@ -191,7 +191,11 @@ footer {
 @media (min-width: 60rem) {
   main {
     display: grid;
-    justify-content: center;
+    justify-items: center;
+  }
+
+  .main__image {
+    max-width: 33.75rem;
   }
 
   .card {
