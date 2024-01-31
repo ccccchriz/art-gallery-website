@@ -23,6 +23,11 @@
   text-transform: uppercase;
   font-size: 1.25rem;
   letter-spacing: 0.22725rem;
+  transition: 300ms;
+}
+
+.main__link:is(:hover, :focus-visible) {
+  background-color: var(--clr-primary-gold);
 }
 
 .main__map {
@@ -99,6 +104,11 @@ footer {
 
 .footer__social {
   filter: brightness(1) invert(1);
+  transition: 300ms;
+}
+
+.footer__social:is(:hover, :focus-visible) {
+  filter: none;
 }
 
 @media screen and (min-width: 40rem) {
