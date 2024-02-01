@@ -107,7 +107,7 @@ footer {
   transition: 300ms;
 }
 
-.footer__social:is(:hover, :focus-visible) {
+.footer__link:is(:hover, :focus-visible) > img {
   filter: none;
 }
 

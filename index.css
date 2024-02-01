@@ -132,6 +132,11 @@ footer {
   font-size: 0;
 }
 
+.footer__link:is(:hover, :focus-visible) > img {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(52%) saturate(335%)
+    hue-rotate(341deg) brightness(95%) contrast(93%);
+}
+
 @media screen and (min-width: 40rem) {
   main {
     display: grid;
@@ -207,7 +212,7 @@ footer {
   }
 
   .main__image {
-    max-width: 33.75rem;
+    min-height: 100vh;
     box-shadow: -1000rem -1000rem 0px 1000rem var(--clr-neutral-300);
   }
 
