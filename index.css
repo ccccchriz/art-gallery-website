@@ -209,6 +209,7 @@ footer {
     display: grid;
     justify-items: center;
     max-width: 70rem;
+    row-gap: 10rem;
   }
 
   .main__image {
