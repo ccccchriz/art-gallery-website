@@ -229,9 +229,12 @@ footer {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
   }
 
   .card__logo {
+    width: 100%;
+    max-width: 28.75rem;
     grid-row: 1 / 3;
     filter: invert(1);
     mix-blend-mode: exclusion;
