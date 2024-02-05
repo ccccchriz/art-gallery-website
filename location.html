@@ -14,6 +14,8 @@
     <title>Location | Art gallery website</title>
     <link rel="stylesheet" href="default.css" />
     <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
   </head>
   <body>
     <main>
@@ -21,25 +23,7 @@
       <div class="main__link-con">
         <a href="index.html" class="main__link">Back to Home</a>
       </div>
-      <picture>
-        <source
-          media="(min-width: 80rem)"
-          srcset="assets/desktop/image-map@2x.png"
-        />
-        <source
-          media="(min-width: 60rem)"
-          srcset="assets/desktop/image-map.png"
-        />
-        <source
-          media="(min-width: 40rem)"
-          srcset="assets/tablet/image-map.png"
-        />
-        <source
-          media="(min-width: 30rem)"
-          srcset="assets/mobile/image-map@2x.png"
-        />
-        <img src="assets/mobile/image-map.png" alt="" class="main__map" />
-      </picture>
+      <div class="main__map" id="map"></div>
       <div class="card">
         <h2 class="card__title">Our location</h2>
         <p class="card__address">
@@ -94,5 +78,6 @@
         </ul>
       </div>
     </footer>
+    <script src="map.js"></script>
   </body>
 </html>
