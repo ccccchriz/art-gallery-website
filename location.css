@@ -12,8 +12,16 @@
   --fw-black: 900;
 }
 
-.main__link {
+.main__link-con {
+  align-self: center;
+  width: 100%;
+  max-width: 70rem;
+  height: fit-content;
   position: absolute;
+}
+
+.main__link {
+  /* position: absolute; */
   width: max-content;
   display: flex;
   align-items: center;
