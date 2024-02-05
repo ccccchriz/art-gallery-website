@@ -67,18 +67,32 @@ body {
 }
 
 .main__link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 6.5rem;
   width: max-content;
-  display: block;
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-300);
   text-decoration: none;
-  padding: 1.5rem 2rem;
+  padding-left: 1.5rem;
   text-transform: uppercase;
   font-size: 1.25rem;
   letter-spacing: 0.22725rem;
   transition: 300ms;
+}
+
+.main__link::after {
+  display: block;
+  content: "";
+  background-color: var(--clr-primary-gold);
+  background-image: url(assets/icon-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.5rem;
+  padding: 2.25rem 0;
+  height: inherit;
 }
 
 .main__link:is(:hover, :focus-visible) {
