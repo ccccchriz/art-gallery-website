@@ -46,10 +46,15 @@
   width: 3.5rem;
   padding: 2.25rem 0;
   height: inherit;
+  transition: 300ms;
 }
 
 .main__link:is(:hover, :focus-visible) {
   background-color: var(--clr-primary-gold);
+}
+
+.main__link:is(:hover, :focus-visible)::before {
+  background-color: var(--clr-neutral-300);
 }
 
 .main__map {
